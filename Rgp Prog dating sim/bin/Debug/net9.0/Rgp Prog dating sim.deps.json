@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Rgp Prog dating sim/1.0.0": {
+        "runtime": {
+          "Rgp Prog dating sim.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Rgp Prog dating sim/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
