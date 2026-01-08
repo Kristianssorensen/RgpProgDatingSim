@@ -33,13 +33,13 @@ public class player
         }
     }
 
-    public void tjekPlaystatsLower10()
+    public void tjekPlayStatsLower10()
     {
         if (height + charisma + strength > 10)
         {
             Console.WriteLine("Din fucking bums summen måtte højets være 10, prøv igen din nød.");
             SetPlayerStats();
-            tjekPlaystatsLower10();
+            tjekPlayStatsLower10();
         }
         else
         {
