@@ -12,3 +12,18 @@
 /Users/kristiansorensen/Library/CloudStorage/OneDrive-EFIF/Gymnasie/Programering/Rgp Prog dating sim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.pdb
 /Users/kristiansorensen/Library/CloudStorage/OneDrive-EFIF/Gymnasie/Programering/Rgp Prog dating sim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.genruntimeconfig.cache
 /Users/kristiansorensen/Library/CloudStorage/OneDrive-EFIF/Gymnasie/Programering/Rgp Prog dating sim/Rgp Prog dating sim/obj/Debug/net9.0/ref/Rgp Prog dating sim.dll
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/bin/Debug/net9.0/Rgp Prog dating sim
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/bin/Debug/net9.0/Rgp Prog dating sim.deps.json
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/bin/Debug/net9.0/Rgp Prog dating sim.runtimeconfig.json
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/bin/Debug/net9.0/Rgp Prog dating sim.dll
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/bin/Debug/net9.0/Rgp Prog dating sim.pdb
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.AssemblyInfoInputs.cache
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.AssemblyInfo.cs
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.csproj.CoreCompileInputs.cache
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.sourcelink.json
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.dll
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/refint/Rgp Prog dating sim.dll
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.pdb
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/Rgp Prog dating sim.genruntimeconfig.cache
+/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/Debug/net9.0/ref/Rgp Prog dating sim.dll
