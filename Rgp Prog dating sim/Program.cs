@@ -4,4 +4,4 @@ using Rgp_Prog_dating_sim;
 
 player player = new player();
 player.SetPlayerStats();
-player.tjekPlayStatsLower10();
+player.tjekPlayStatsLower10(); 
