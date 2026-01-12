@@ -2,6 +2,5 @@
 
 using Rgp_Prog_dating_sim;
 
-player player = new player();
-player.SetPlayerStats();
-player.tjekPlayStatsLower10(); 
+Gamer Game = new Gamer();
+Game.GameStart();

@@ -50,7 +50,15 @@ public class player
         }
     }
 
+    public void printPlayerStats()
+    {
+        Console.WriteLine($"Dine stats er nu: Højde = {height} Charizzma = {charisma} strength = {strength}");
+    }
 }
+
+
+
+
 /* test af github */
 
 
