@@ -8,88 +8,13 @@ public class Gamer
     public void GameStart()
     {
         // SetGamerStats(); //setter dine stats (husk at aktiver igen)
+        SetGamerStats();
+        Thread.Sleep(2000);
         SetScene(); // setter scenen
+        Thread.Sleep(2000);
         convo convo = new convo();
-        
-        
-        
+        convo.startconvo();
     }
-    
-
-    
-    public void Spørgsmål1()
-    {
-        Console.WriteLine("Du ser så godt ud iaften");
-        Console.WriteLine("Vælg mulighed ");
-
-        List<string> Svar = new List<string>();
-        Svar.Add("1 Fuck dig din grimme so");
-        Svar.Add("2 Knep?");
-
-        foreach (string svar in Svar)
-        {
-            Console.WriteLine(svar);
-        }
-
-        string input = Console.ReadLine();
-
-        if (input == "1")
-        {
-            Console.WriteLine("IDK1");
-            Spørgsmål2();
-        }   
-        if (input == "2")
-        {
-            Console.WriteLine("IDK2");
-            Spørgsmål3();
-        }   
-    }
-
-    public void Spørgsmål2()
-    {
-        Console.WriteLine("Spørgsmål2");
-        Console.WriteLine("Vælg mulighed ");
-
-        List<string> Svar2 = new List<string>();
-        Svar2.Add("1 Fuck dig din grimme so");
-        Svar2.Add("2 Knep?");
-
-        foreach (string svar in Svar2)
-        {
-            Console.WriteLine(svar);
-        }
-
-        string input = Console.ReadLine();
-
-        if (input == "1")
-        {
-            Console.WriteLine("IDK1");
-        }   
-    }
-    
-    public void Spørgsmål3()
-    {
-        Console.WriteLine("Spørgsmål3");
-        Console.WriteLine("Vælg mulighed ");
-
-        List<string> Svar3 = new List<string>();
-        Svar3.Add("1 svar 2");
-        Svar3.Add("2 svar 2?");
-
-        foreach (string svar in Svar3)
-        {
-            Console.WriteLine(svar);
-        }
-
-        string input = Console.ReadLine();
-
-        if (input == "1")
-        {
-            Console.WriteLine("IDK1");
-            s
-        }   
-    }
-
     public void choosDate()
     {
         List<string> carectors = new List<string>();

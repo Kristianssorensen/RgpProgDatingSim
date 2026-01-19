@@ -3,7 +3,7 @@ namespace Rgp_Prog_dating_sim;
 
 public class player
 {
-    //Variabler til player
+    //Variabler til player$
     public int height;
     public int charisma;
     public int strength;
