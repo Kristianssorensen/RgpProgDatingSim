@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Rgp Prog dating sim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69dba09433799e24664cc6715fc66cb08aad8cb0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e29ca824c9e3ed5d45a4d6b1afd93a103de2047")]
 [assembly: System.Reflection.AssemblyProductAttribute("Rgp Prog dating sim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Rgp Prog dating sim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

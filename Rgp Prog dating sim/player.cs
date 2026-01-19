@@ -3,17 +3,19 @@ namespace Rgp_Prog_dating_sim;
 
 public class player
 {
+    //Variabler til player
     public int height;
     public int charisma;
     public int strength;
 
     public void SetPlayerStats()
     {
+        //set dine stats
         Console.WriteLine(
             "Du skal sette dine stats. Højde, Charizzma, styrke. Skriv en værdig mellem 1-5, summen af dine stas må højest være 10");
         Console.WriteLine("Sæt højde: ");
         height = Convert.ToInt32(Console.ReadLine());
-        if (height > 5 || height < 1)
+        if (height > 5 || height < 1) //Tjekker at dine stats er inden for det område vi vil have
         {
             Console.WriteLine("hvæm tror du du er det må højest være 5 din bums! du er du på højde med mathias");
             height = 1;
@@ -36,8 +38,10 @@ public class player
         }
     }
 
+    
     public void tjekPlayStatsLower10()
     {
+        //tjekker at dine samlede stats er under 10
         if (height + charisma + strength > 10)
         {
             Console.WriteLine("Din fucking bums summen måtte højets være 10, prøv igen din nød.");
@@ -52,13 +56,8 @@ public class player
 
     public void printPlayerStats()
     {
+        //skriver dine stats
         Console.WriteLine($"Dine stats er nu: Højde = {height} Charizzma = {charisma} strength = {strength}");
     }
 }
-
-
-
-
-/* test af github */
-
 

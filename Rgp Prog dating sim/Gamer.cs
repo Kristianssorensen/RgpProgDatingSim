@@ -7,33 +7,14 @@ public class Gamer
 {
     public void GameStart()
     {
-        SetGamerStats();
-        Thread.Sleep(3000);
-        Convo();
-        Thread.Sleep(3000);
-        Spørgsmål1();
+        // SetGamerStats(); //setter dine stats (husk at aktiver igen)
+        SetScene(); // setter scenen
+        convo convo = new convo();
+        
     }
+    
 
-    public void Convo()
-    {
-        SetScene();
-    }
-
-    public void SetGamerStats()
-    {
-        player player = new player();
-        player.SetPlayerStats();
-        player.tjekPlayStatsLower10(); 
-        player.printPlayerStats();
-    }
-
-    public void SetScene()
-    {
-        string date = "Isabella";
-        Console.WriteLine("Aftensolen falder stille mens i sætter jer ned ved bordet på resturant klopfer.");
-        Console.WriteLine($"Du kigger {date} i øjnene");
-    }
-
+    
     public void Spørgsmål1()
     {
         Console.WriteLine("Du ser så godt ud iaften");
@@ -104,5 +85,25 @@ public class Gamer
         {
             Console.WriteLine("IDK1");
         }   
+    }
+
+    public void choosDate()
+    {
+        List<string> carectors = new List<string>();
+        Console.WriteLine("hvem vil du godt på date med? tryk 1 for sofia eller fuck af med dig din taber");
+        
+    }
+    public void SetGamerStats()
+    {
+        player player = new player();
+        player.SetPlayerStats();
+        player.tjekPlayStatsLower10(); 
+        player.printPlayerStats();
+    }
+    public void SetScene()
+    {
+        string date = "Isabella";
+        Console.WriteLine("Aftensolen falder stille mens i sætter jer ned ved bordet på resturant klopfer.");
+        Console.WriteLine($"Du kigger {date} i øjnene");
     }
 }
