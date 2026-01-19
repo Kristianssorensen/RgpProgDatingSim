@@ -11,6 +11,8 @@ public class Gamer
         SetScene(); // setter scenen
         convo convo = new convo();
         
+        
+        
     }
     
 
@@ -84,6 +86,7 @@ public class Gamer
         if (input == "1")
         {
             Console.WriteLine("IDK1");
+            s
         }   
     }
 
