@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace Rgp_Prog_dating_sim
 {
-    
+
     public class convo
     {
         public int akwardnes = 4;
         public int DateMood = 5;
-       
+
         public void TjekAkwardnes()
         {
             if (akwardnes <= 0)
@@ -17,7 +17,7 @@ namespace Rgp_Prog_dating_sim
                 Environment.Exit(0);
             }
         }
-    
+
         public void startconvo()
         {
             Console.WriteLine("Du ser godt ud i aften skat!");
@@ -42,7 +42,7 @@ namespace Rgp_Prog_dating_sim
                 Spørgsmål3();
             }
         }
-        
+
         public void Spørgsmål2()
         {
             Console.WriteLine("(tjeneren kommer hen til bordet) Hvad kunne i tænke jer at spise");
@@ -54,7 +54,7 @@ namespace Rgp_Prog_dating_sim
             if (choice == 1)
             {
                 Console.WriteLine("Spaghetti kødsovs");
-                DateMood +;
+                DateMood++;
                 Spørgsmål4();
             }
             else if (choice == 2)
@@ -65,9 +65,6 @@ namespace Rgp_Prog_dating_sim
                 Spørgsmål5();
             }
         }
-    
-       
-    
         public void Spørgsmål3()
         {
             Console.WriteLine("");
@@ -90,7 +87,7 @@ namespace Rgp_Prog_dating_sim
                 Spørgsmål7();
             }
         }
-        
+
         public void Spørgsmål4()
         {
             Console.WriteLine("");
@@ -113,7 +110,7 @@ namespace Rgp_Prog_dating_sim
                 Spørgsmål9();
             }
         }
-        
+
         public void Spørgsmål5()
         {
             Console.WriteLine("");
@@ -127,7 +124,7 @@ namespace Rgp_Prog_dating_sim
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
                 Spørgsmål10();
-                
+
             }
             else if (choice == 2)
             {
@@ -137,7 +134,7 @@ namespace Rgp_Prog_dating_sim
                 Spørgsmål11();
             }
         }
-        
+
         public void Spørgsmål6()
         {
             Console.WriteLine("");
@@ -151,7 +148,7 @@ namespace Rgp_Prog_dating_sim
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
                 Spørgsmål12();
-            
+
             }
             else if (choice == 2)
             {
@@ -159,10 +156,10 @@ namespace Rgp_Prog_dating_sim
                 akwardnes = 5;
                 DateMood = 3;
                 Spørgsmål13();
-               
+
             }
         }
-        
+
         public void Spørgsmål7()
         {
             Console.WriteLine("");
@@ -185,7 +182,7 @@ namespace Rgp_Prog_dating_sim
                 Spørgsmål15();
             }
         }
-        
+
         public void Spørgsmål8()
         {
             Console.WriteLine("");
@@ -197,18 +194,18 @@ namespace Rgp_Prog_dating_sim
             if (choice == 1)
             {
                 Console.WriteLine("Iligemåde babe <3");
-              
-                
+
+
             }
             else if (choice == 2)
             {
                 Console.WriteLine("Okay. |: ");
                 akwardnes = 5;
                 DateMood = 3;
-                
+
             }
         }
-        
+
         public void Spørgsmål9()
         {
             Console.WriteLine("");
@@ -221,17 +218,17 @@ namespace Rgp_Prog_dating_sim
             {
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
-                
+
             }
             else if (choice == 2)
             {
                 Console.WriteLine("Okay. |: ");
                 akwardnes = 5;
                 DateMood = 3;
-               
+
             }
         }
-        
+
         public void Spørgsmål10()
         {
             Console.WriteLine("");
@@ -244,17 +241,17 @@ namespace Rgp_Prog_dating_sim
             {
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
-                
+
             }
             else if (choice == 2)
             {
                 Console.WriteLine("Okay. |: ");
                 akwardnes = 5;
                 DateMood = 3;
-                
+
             }
         }
-        
+
         public void Spørgsmål11()
         {
             Console.WriteLine("");
@@ -267,17 +264,17 @@ namespace Rgp_Prog_dating_sim
             {
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
-                
+
             }
             else if (choice == 2)
             {
                 Console.WriteLine("Okay. |: ");
                 akwardnes = 5;
                 DateMood = 3;
-                
+
             }
         }
-        
+
         public void Spørgsmål12()
         {
             Console.WriteLine("");
@@ -290,17 +287,17 @@ namespace Rgp_Prog_dating_sim
             {
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
-                
+
             }
             else if (choice == 2)
             {
                 Console.WriteLine("Okay. |: ");
                 akwardnes = 5;
                 DateMood = 3;
-               
+
             }
         }
-        
+
         public void Spørgsmål13()
         {
             Console.WriteLine("");
@@ -313,17 +310,17 @@ namespace Rgp_Prog_dating_sim
             {
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
-            
+
             }
             else if (choice == 2)
             {
                 Console.WriteLine("Okay. |: ");
                 akwardnes = 5;
                 DateMood = 3;
-              
+
             }
         }
-        
+
         public void Spørgsmål14()
         {
             Console.WriteLine("");
@@ -344,7 +341,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
             }
         }
-        
+
         public void Spørgsmål15()
         {
             Console.WriteLine("");
@@ -357,7 +354,7 @@ namespace Rgp_Prog_dating_sim
             {
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
-                
+
             }
             else if (choice == 2)
             {
@@ -366,3 +363,10 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
             }
         }
+
+    }
+
+}
+
+// start -> 2 og 3
+2
