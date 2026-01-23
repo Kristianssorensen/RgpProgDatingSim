@@ -31,7 +31,7 @@ namespace Rgp_Prog_dating_sim
                 Console.WriteLine("Iligemåde babe <3");
                 akwardnes = 3;
                 TjekAkwardnes();
-                Spørgsmål2();
+                Spørgsmål1();
             }
             else if (choice == 2)
             {
@@ -39,11 +39,10 @@ namespace Rgp_Prog_dating_sim
                 TjekAkwardnes();
                 akwardnes = 5;
                 DateMood = 3;
-                Spørgsmål3();
+                Spørgsmål1();
             }
         }
-
-        public void Spørgsmål2()
+        public void Spørgsmål1()
         {
             Console.WriteLine("(tjeneren kommer hen til bordet) Hvad kunne i tænke jer at spise");
             Console.WriteLine("Tast 1 for Spaghetti kødsovs");
@@ -55,15 +54,37 @@ namespace Rgp_Prog_dating_sim
             {
                 Console.WriteLine("Spaghetti kødsovs");
                 DateMood++;
-                Spørgsmål4();
+                Spørgsmål2();
             }
             else if (choice == 2)
             {
                 Console.WriteLine("Krokodille krydret med spermet fra en ged");
                 akwardnes++;
                 DateMood--;
+                Spørgsmål3();
+            }
+            TjekAkwardnes();
+        }
+
+        public void Spørgsmål2()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            if (choice == 1)
+            {
+                Console.WriteLine("");
+                Spørgsmål4();
+            }
+            else if (choice == 2)
+            {
+                Console.WriteLine("");
                 Spørgsmål5();
             }
+            TjekAkwardnes();
         }
         public void Spørgsmål3()
         {
@@ -86,6 +107,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
                 Spørgsmål7();
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål4()
@@ -109,6 +131,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
                 Spørgsmål9();
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål5()
@@ -133,6 +156,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
                 Spørgsmål11();
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål6()
@@ -158,6 +182,7 @@ namespace Rgp_Prog_dating_sim
                 Spørgsmål13();
 
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål7()
@@ -181,6 +206,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
                 Spørgsmål15();
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål8()
@@ -204,6 +230,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
 
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål9()
@@ -227,6 +254,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
 
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål10()
@@ -250,6 +278,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
 
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål11()
@@ -273,6 +302,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
 
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål12()
@@ -296,6 +326,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
 
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål13()
@@ -319,6 +350,7 @@ namespace Rgp_Prog_dating_sim
                 DateMood = 3;
 
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål14()
@@ -340,6 +372,7 @@ namespace Rgp_Prog_dating_sim
                 akwardnes = 5;
                 DateMood = 3;
             }
+            TjekAkwardnes();
         }
 
         public void Spørgsmål15()
@@ -362,6 +395,7 @@ namespace Rgp_Prog_dating_sim
                 akwardnes = 5;
                 DateMood = 3;
             }
+            TjekAkwardnes();
         }
 
     }
