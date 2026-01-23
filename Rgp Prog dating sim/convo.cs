@@ -368,5 +368,3 @@ namespace Rgp_Prog_dating_sim
 
 }
 
-// start -> 2 og 3
-2
