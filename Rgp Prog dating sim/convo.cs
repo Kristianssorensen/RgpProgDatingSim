@@ -6,9 +6,15 @@ namespace Rgp_Prog_dating_sim
 
     public class convo
     {
+        private player PlayerRef;
+        
         public int akwardnes = 4;
         public int DateMood = 5;
 
+        public convo(player p) 
+        {
+            PlayerRef = p;
+        }
         public void TjekAkwardnes()
         {
             if (akwardnes <= 0)
@@ -68,41 +74,49 @@ namespace Rgp_Prog_dating_sim
 
         public void Spørgsmål2()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("Ej totalt hyggeligt ligesom i lady og vagabonden");
+            Console.WriteLine("1 Ja nu mangler vi bare kysset");
+            Console.WriteLine("2 Ja så bug dig ned og lad os tage den doggystyle");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("");
+                Console.WriteLine("1 Ja nu mangler vi bare kysset");
+                akwardnes--;
+                DateMood++;
                 Spørgsmål4();
             }
             else if (choice == 2)
             {
-                Console.WriteLine("");
+                Console.WriteLine("Ja så bug dig ned og lad os tage den doggystyle");
+                akwardnes++;
+                DateMood--;
                 Spørgsmål5();
             }
             TjekAkwardnes();
         }
         public void Spørgsmål3()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
+            Console.WriteLine("Ej hvor var det mærkeligt sagt skat du simpelhen for meget");
+            Console.WriteLine("1 Det må du virkelig undskylde skal nok opføre mig ordentligt");
+            Console.WriteLine("2 Jeg gør hvad jeg vil");
+            if (PlayerRef.strength > 3)
+            {
+                Console.WriteLine("Kast krokodillen efter hende");
+                Environment.Exit(0);
+            }
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("Iligemåde babe <3");
+                Console.WriteLine("");
                 akwardnes = 3;
                 Spørgsmål6();
             }
             else if (choice == 2)
             {
-                Console.WriteLine("Okay. |: ");
+                Console.WriteLine("");
                 akwardnes = 5;
                 DateMood = 3;
                 Spørgsmål7();
