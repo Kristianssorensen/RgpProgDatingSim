@@ -75,10 +75,19 @@ namespace Rgp_Prog_dating_sim
 
             int choice = Convert.ToInt32(Console.ReadLine());
             
-            if (PlayerRef.charisma > 3)
+            if (PlayerRef.charisma >= 4)
             {
-                Console.WriteLine("Det eneste der kunne smage bedre ville være dig (; "); // rizzy with it
+                Console.WriteLine("3 Det eneste der kunne smage bedre ville være dig (; "); // rizzy with it
             }
+            if(PlayerRef.strength >= 4)
+            {
+                Console.WriteLine("4 Flex dine kæmpe muller for at imponere hende");
+            }
+            if(PlayerRef.height >= 4)
+            {
+                Console.WriteLine("5 rejs dig op for at height mog hende");
+            }
+                
 
 
             if (choice == 1)
@@ -91,9 +100,28 @@ namespace Rgp_Prog_dating_sim
                 akwardnes++;
                 Spørgsmål5();
             }
+
             if (choice == 3)
+            {
                 akwardnes--;
-            EndingGood();
+                EndingGood();
+            }
+            
+            if (choice == 4)
+            {
+                
+                akwardnes++;
+                EndingBad();
+                Console.WriteLine("du ik tuf bro");
+            }
+            
+            if (choice == 5)
+            {
+                
+                akwardnes++;
+                Spørgsmål3();
+            }
+            
             
             
 
@@ -204,7 +232,7 @@ namespace Rgp_Prog_dating_sim
 
         private void EndingGood()
         {
-            Console.WriteLine("Det blev en virkelig vellykket date i tager hjem til hende og Knepper !");
+            Console.WriteLine("Det blev en virkelig vellykket date i tager hjem til hende og Knepper!");
             Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣙⡛⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⠙⣿⣧⠀⣤⣶⣄⣾⣿⣿⣷⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣇⣴⣮⡿⣿⡟⠛⠁⣙⠿⠿⠋⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⡏⣿⣿⣿⣾⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣿⣿⡇⢿⣿⡇⠈⠉⠻⡿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠘⠿⠿⠿⠿⠿⠧⠿⠿⠇⠀⠀⠀⠀⠿⠿⠿⠿⠗");
             Environment.Exit(0);
         }
@@ -218,8 +246,8 @@ namespace Rgp_Prog_dating_sim
 
         private void EndingBad()
         {
-            Console.WriteLine("Stemningen er helt off...");
-            Console.WriteLine("I går hver til sit.");
+            Console.WriteLine("Stemningen er helt Væk");
+            Console.WriteLine("I går hver til sit og du gooner alene derhjemme.");
             Environment.Exit(0);
         }
     }
