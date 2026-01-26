@@ -1,7 +1,7 @@
 using System;
 namespace Rgp_Prog_dating_sim;
 
-public class player
+public class player : IplayerType
 {
     //Variabler til player$
     public int height;

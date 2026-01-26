@@ -1,20 +1,19 @@
 using System;
-using System.Collections.Generic;
 
 namespace Rgp_Prog_dating_sim
 {
-
     public class convo
     {
         private player PlayerRef;
-        
+
         public int akwardnes = 4;
         public int DateMood = 5;
 
-        public convo(player p) 
+        public convo(player p)
         {
             PlayerRef = p;
         }
+        
         public void TjekAkwardnes()
         {
             if (akwardnes <= 0)
@@ -27,392 +26,201 @@ namespace Rgp_Prog_dating_sim
         public void startconvo()
         {
             Console.WriteLine("Du ser godt ud i aften skat!");
-            Console.WriteLine("tast 1 for Iligemåde babe <3 ");
-            Console.WriteLine("tast 2 for Okay. |: ");
+            Console.WriteLine("1: I lige måde babe <3");
+            Console.WriteLine("2: Okay. |:");
 
             int choice = Convert.ToInt32(Console.ReadLine());
-
             if (choice == 1)
             {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-                TjekAkwardnes();
+                akwardnes--;
+                DateMood++;
                 Spørgsmål1();
             }
-            else if (choice == 2)
+            if (choice == 2)
             {
-                Console.WriteLine("Okay. |: ");
-                TjekAkwardnes();
-                akwardnes = 5;
-                DateMood = 3;
+                akwardnes++;
+                DateMood--;
                 Spørgsmål1();
             }
         }
+
         public void Spørgsmål1()
         {
-            Console.WriteLine("(tjeneren kommer hen til bordet) Hvad kunne i tænke jer at spise");
-            Console.WriteLine("Tast 1 for Spaghetti kødsovs");
-            Console.WriteLine("tast 2 for Krokodille krydret med spermet fra en ged");
+            Console.WriteLine("(Tjeneren kommer) Hvad vil I spise?");
+            Console.WriteLine("1: Spaghetti kødsovs");
+            Console.WriteLine("2: Krokodille Krydret med Sperm");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("Spaghetti kødsovs");
                 DateMood++;
                 Spørgsmål2();
             }
-            else if (choice == 2)
+            if ( choice == 2)
             {
-                Console.WriteLine("Krokodille krydret med spermet fra en ged");
                 akwardnes++;
                 DateMood--;
                 Spørgsmål3();
             }
+
             TjekAkwardnes();
         }
 
         public void Spørgsmål2()
         {
-            Console.WriteLine("Ej totalt hyggeligt ligesom i lady og vagabonden");
-            Console.WriteLine("1 Ja nu mangler vi bare kysset");
-            Console.WriteLine("2 Ja så bug dig ned og lad os tage den doggystyle");
+            Console.WriteLine("Ej hvor hyggeligt  ligesom Lady og Vagabonden.");
+            Console.WriteLine("1: Ja, mega romantisk");
+            Console.WriteLine("2: Ja nu skal du har ha den i doggy");
 
             int choice = Convert.ToInt32(Console.ReadLine());
+            
+            if (PlayerRef.charisma > 3)
+            {
+                Console.WriteLine("Det eneste der kunne smage bedre ville være dig (; "); // rizzy with it
+            }
+
 
             if (choice == 1)
             {
-                Console.WriteLine("1 Ja nu mangler vi bare kysset");
-                akwardnes--;
-                DateMood++;
+                DateMood += 2;
                 Spørgsmål4();
             }
-            else if (choice == 2)
+            if (choice == 2)
             {
-                Console.WriteLine("Ja så bug dig ned og lad os tage den doggystyle");
                 akwardnes++;
-                DateMood--;
                 Spørgsmål5();
             }
+            if (choice == 3)
+                akwardnes--;
+            EndingGood();
+            
+            
+
             TjekAkwardnes();
         }
+
         public void Spørgsmål3()
         {
-            Console.WriteLine("Ej hvor var det mærkeligt sagt skat du simpelhen for meget");
-            Console.WriteLine("1 Det må du virkelig undskylde skal nok opføre mig ordentligt");
-            Console.WriteLine("2 Jeg gør hvad jeg vil");
-            if (PlayerRef.strength > 3)
-            {
-                Console.WriteLine("Kast krokodillen efter hende");
-                Environment.Exit(0);
-            }
+            Console.WriteLine("Hun ser lidt forvirret ud over dit valg.");
+            Console.WriteLine("1: Undskyld, dårlig joke");
+            Console.WriteLine("2: Hold din kæft kælling");
+
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("");
-                akwardnes = 3;
+                akwardnes--;
                 Spørgsmål6();
             }
-            else if (choice == 2)
+            if  (choice == 2)
             {
-                Console.WriteLine("");
-                akwardnes = 5;
-                DateMood = 3;
+                akwardnes += 2;
+                DateMood--;
                 Spørgsmål7();
             }
+
             TjekAkwardnes();
         }
 
         public void Spørgsmål4()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("Samtalen flyder virkelig godt nu.");
+            Console.WriteLine("1: Fortæl en sød historie");
+            Console.WriteLine("2: Lav en joke om negere");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-                Spørgsmål8();
+                DateMood += 2;
+                EndingGood();
             }
-            else if (choice == 2)
+            if  (choice == 2)
             {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-                Spørgsmål9();
+                akwardnes++;
+                EndingNeutral();
             }
-            TjekAkwardnes();
         }
 
         public void Spørgsmål5()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("Stemningen bliver lidt akavet.");
+            Console.WriteLine("1: Skift emne");
+            Console.WriteLine("2: Bitch slap hende");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-                Spørgsmål10();
-
+                akwardnes--;
+                EndingNeutral();
             }
-            else if (choice == 2)
+            if (choice == 2)
             {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-                Spørgsmål11();
+                akwardnes++;
+                EndingBad();
             }
-            TjekAkwardnes();
         }
 
         public void Spørgsmål6()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("Hun smiler igen.");
+            Console.WriteLine("1: Foreslå dessert");
+            Console.WriteLine("2: Knep?");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-                Spørgsmål12();
-
+                DateMood++;
+                EndingGood();
             }
-            else if (choice == 2)
+            if  (choice == 2)
             {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-                Spørgsmål13();
-
+                EndingNeutral();
             }
-            TjekAkwardnes();
         }
 
         public void Spørgsmål7()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine("Hun virker irriteret.");
+            Console.WriteLine("1: Undskyld oprigtigt");
+            Console.WriteLine("2: Bliv defensiv");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
             {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-                Spørgsmål14();
+                akwardnes--;
+                EndingNeutral();
             }
-            else if (choice == 2)
+            if  (choice == 2)
             {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-                Spørgsmål15();
+                akwardnes += 2;
+                EndingBad();
             }
-            TjekAkwardnes();
         }
 
-        public void Spørgsmål8()
+        private void EndingGood()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-
-
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-
-            }
-            TjekAkwardnes();
+            Console.WriteLine("Det blev en virkelig vellykket date i tager hjem til hende og Knepper !");
+            Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣙⡛⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⠙⣿⣧⠀⣤⣶⣄⣾⣿⣿⣷⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣇⣴⣮⡿⣿⡟⠛⠁⣙⠿⠿⠋⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⡏⣿⣿⣿⣾⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣿⣿⡇⢿⣿⡇⠈⠉⠻⡿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠘⠿⠿⠿⠿⠿⠧⠿⠿⠇⠀⠀⠀⠀⠿⠿⠿⠿⠗");
+            Environment.Exit(0);
         }
 
-        public void Spørgsmål9()
+        private void EndingNeutral()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-
-            }
-            TjekAkwardnes();
+            Console.WriteLine("Det var en okay date.");
+            Console.WriteLine("Måske ses I igen.");
+            Environment.Exit(0);
         }
 
-        public void Spørgsmål10()
+        private void EndingBad()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-
-            }
-            TjekAkwardnes();
+            Console.WriteLine("Stemningen er helt off...");
+            Console.WriteLine("I går hver til sit.");
+            Environment.Exit(0);
         }
-
-        public void Spørgsmål11()
-        {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-
-            }
-            TjekAkwardnes();
-        }
-
-        public void Spørgsmål12()
-        {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-
-            }
-            TjekAkwardnes();
-        }
-
-        public void Spørgsmål13()
-        {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-
-            }
-            TjekAkwardnes();
-        }
-
-        public void Spørgsmål14()
-        {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-            }
-            TjekAkwardnes();
-        }
-
-        public void Spørgsmål15()
-        {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-
-            int choice = Convert.ToInt32(Console.ReadLine());
-
-            if (choice == 1)
-            {
-                Console.WriteLine("Iligemåde babe <3");
-                akwardnes = 3;
-
-            }
-            else if (choice == 2)
-            {
-                Console.WriteLine("Okay. |: ");
-                akwardnes = 5;
-                DateMood = 3;
-            }
-            TjekAkwardnes();
-        }
-
     }
-
 }
-
