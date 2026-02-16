@@ -16,18 +16,10 @@ public class Gamer
 
         SetScene();
         Thread.Sleep(2000);
-
         convo convo = new convo(PlayerRef); 
         convo.startconvo();
     }
-
-    public void choosDate()
-    {
-        List<string> characters = new List<string>();
-        Console.WriteLine("Hvem vil du på date med?");
-        Console.WriteLine("Tryk 1 for Sofia");
-    }
-
+    
     public void SetGamerStats()
     {
         PlayerRef = new player();          

@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/Users/johanaggerholm/.nuget/packages/": {}
+    "/Users/kristiansorensen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/johanaggerholm/Documents/proC/RgpProgDatingSim/Rgp Prog dating sim/Rgp Prog dating sim.csproj",
+      "projectUniqueName": "/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/Rgp Prog dating sim.csproj",
       "projectName": "Rgp Prog dating sim",
-      "projectPath": "/Users/johanaggerholm/Documents/proC/RgpProgDatingSim/Rgp Prog dating sim/Rgp Prog dating sim.csproj",
-      "packagesPath": "/Users/johanaggerholm/.nuget/packages/",
-      "outputPath": "/Users/johanaggerholm/Documents/proC/RgpProgDatingSim/Rgp Prog dating sim/obj/",
+      "projectPath": "/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/Rgp Prog dating sim.csproj",
+      "packagesPath": "/Users/kristiansorensen/.nuget/packages/",
+      "outputPath": "/Users/kristiansorensen/Desktop/RgpProgDatingSim/Rgp Prog dating sim/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/johanaggerholm/.nuget/NuGet/NuGet.Config"
+        "/Users/kristiansorensen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/kristiansorensen/.dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

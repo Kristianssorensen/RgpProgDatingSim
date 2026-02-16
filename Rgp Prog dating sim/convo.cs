@@ -78,7 +78,7 @@ namespace Rgp_Prog_dating_sim
             if (PlayerRef.charisma >= 4)
             {
                 Console.WriteLine("3 Det eneste der kunne smage bedre ville være dig (; "); // rizzy with it
-            }
+            } 
             if(PlayerRef.strength >= 4)
             {
                 Console.WriteLine("4 Flex dine kæmpe muller for at imponere hende");
